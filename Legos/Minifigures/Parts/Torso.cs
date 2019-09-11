@@ -11,5 +11,10 @@ namespace Legos.Minifigures.Parts
         public abstract bool ChestHair { get; }
         public string Shirt { get; set; }
         public int NumberOfArms { get; set; }
+
+        // abstract means every class must have these methods
+        // virtual class has the method, but anyone can override the default behavior
+        public abstract void Flex();
+        public abstract void Fight();
     }
 }

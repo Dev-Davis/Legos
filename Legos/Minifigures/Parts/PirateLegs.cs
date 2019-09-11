@@ -4,7 +4,35 @@ using System.Text;
 
 namespace Legos.Minifigures.Parts
 {
-    class PirateLegs
+    class PirateLegs : Legs
     {
+        public PirateLegs()
+        {
+            NumberOfLegs = 1;
+            PantLength = PantLength.Capris;
+            VerticalLeap = 2;
+        }
+    }
+
+    class ZombieLegs : Legs
+    {
+        public ZombieLegs()
+        {
+            NumberOfLegs = 0;
+            PantLength = PantLength.None;
+            VerticalLeap = 0;
+            BareFoot = true;
+        }
+    }
+
+    class CentaurLegs : Legs
+    {
+        public CentaurLegs()
+        {
+            NumberOfLegs = 4;
+            PantLength = PantLength.None;
+            BareFoot = true;
+            VerticalLeap = 100;
+        }
     }
 }
