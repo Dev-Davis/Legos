@@ -15,14 +15,14 @@ namespace Legos.Minifigures.Parts
             NumberOfArms = 2;
         }
 
-        public void Flex()
+        public override void Flex()
         {
             Console.WriteLine("The yeti torso flexes menacingly with no hands.");
         }
 
-        public void Fight()
+        public override void Fight()
         {
-            Console.WriteLine("The yeti torso smakcs you with his nubs.");
+            Console.WriteLine("The yeti torso smacks you with his nubs.");
         }
     }
 }

@@ -5,9 +5,27 @@ namespace Legos.Minifigures
     class Minifigure
     {
         // properties
-        public Head Head { get; set; }
+        Head _head;
 
-        public Torso Torso { get; set; }
+        Torso _torso;
+
+        Legs _legs;
+
+        public Minifigure(Head head, Torso torso, Legs legs)
+        {
+            _head = head;
+            _torso = torso;
+            _legs = legs;
+        }
+
+        public void Battle()
+        {
+            _legs.Walk();
+            _head.Talk();
+            _torso.Flex();
+            _torso.Fight();
+            _legs.Kick();
+        }
 
     }
 }
